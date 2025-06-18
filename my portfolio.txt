@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charanya's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h3 {
+            color: #2c3e50;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        img.profile-pic {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        .links a {
+            margin-right: 15px;
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Portfolio</h1>
+
+    <div class="section">
+        <h3>👩‍💻 Introduction</h3>
+        <p>I am Charanya, currently studying at Vignan's University, Vadlamudi.</p>
+        <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?semt=ais_hybrid&w=740" alt="profile icon" class="profile-pic">
+    </div>
+
+    <div class="section">
+        <h3>💡 Skills</h3>
+        <h5>Technical</h5>
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ol>
+        <h5>Non-Technical</h5>
+        <ul>
+            <li>Swimming</li>
+            <li>Dancing</li>
+            <li>Reading</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>🎓 Education</h3>
+        <table>
+            <tr>
+                <th>Sl.No</th>
+                <th>Institution</th>
+                <th>Board</th>
+                <th>YOP</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Vignan</td>
+                <td>JNTUK</td>
+                <td>2026</td>
+                <td>87%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chaitanya</td>
+                <td>BIEAP</td>
+                <td>2023</td>
+                <td>93%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>School</td>
+                <td>SSC</td>
+                <td>2022</td>
+                <td>96%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>📬 Contact Me</h3>
+        <form>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <label for="date">Enter Date:</label>
+            <input type="date" id="date">
+
+            <label for="number">Enter Number:</label>
+            <input type="number" id="number" placeholder="Enter phone number">
+
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message here"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="section links">
+        <h3>🔗 Social Links</h3>
+        <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="demo.html">Demo Page</a>
+    </div>
+
+</body>
+</html>
