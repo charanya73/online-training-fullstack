@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - E-Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2; /* Vibrant blue header */
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+        .product-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-content h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .product-content p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #4a90e2; /* Blue price */
+            margin-bottom: 1rem;
+        }
+        .add-to-cart-btn {
+            background-color: #4a90e2; /* Blue button */
+            color: #ffffff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #357ABD; /* Darker blue on hover */
+            transform: translateY(-1px);
+        }
+        footer {
+            background-color: #2c3e50; /* Dark footer */
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            nav {
+                margin-top: 1rem;
+            }
+            nav a {
+                margin: 0 0.8rem;
+            }
+            .container {
+                margin: 1rem auto;
+                padding: 0 15px;
+            }
+            .products-grid {
+                gap: 1.5rem;
+            }
+            .product-card {
+                border-radius: 0.75rem;
+            }
+            .product-content {
+                padding: 1rem;
+            }
+            .product-content h3 {
+                font-size: 1.2rem;
+            }
+            .product-price {
+                font-size: 1.1rem;
+            }
+            .add-to-cart-btn {
+                padding: 0.7rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Our Latest Products</h1>
+
+        <div class="products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+1" alt="Product 1">
+                <div class="product-content">
+                    <h3>Stylish Wireless Headphones</h3>
+                    <p>Experience immersive audio with noise-cancelling technology and comfortable earcups.</p>
+                    <div class="product-price">$99.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+2" alt="Product 2">
+                <div class="product-content">
+                    <h3>Smart Fitness Tracker</h3>
+                    <p>Monitor your heart rate, steps, and sleep with this sleek and durable fitness band.</p>
+                    <div class="product-price">$49.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+3" alt="Product 3">
+                <div class="product-content">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <p>Powerful sound in a compact design, perfect for outdoor adventures and parties.</p>
+                    <div class="product-price">$75.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+4" alt="Product 4">
+                <div class="product-content">
+                    <h3>Ergonomic Office Chair</h3>
+                    <p>Designed for maximum comfort and support during long working hours. Adjustable features.</p>
+                    <div class="product-price">$249.99</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+5" alt="Product 5">
+                <div class="product-content">
+                    <h3>High-Speed USB-C Hub</h3>
+                    <p>Expand your device's connectivity with multiple ports for data, video, and power.</p>
+                    <div class="product-price">$35.50</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <img src="https://placehold.co/600x400/4a90e2/ffffff?text=Product+6" alt="Product 6">
+                <div class="product-content">
+                    <h3>Compact Digital Camera</h3>
+                    <p>Capture stunning photos and videos with easy-to-use controls and high resolution.</p>
+                    <div class="product-price">$180.00</div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 E-Shop. All rights reserved.
+    </footer>
+</body>
+</html>
